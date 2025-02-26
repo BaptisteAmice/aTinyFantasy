@@ -1,10 +1,10 @@
 [gd_resource type="TileSet" load_steps=5 format=3 uid="uid://ckhayhdtnccg5"]
 
-[ext_resource type="Texture2D" uid="uid://cyl8y18kwv225" path="res://Assets/Sunnyside_World_Assets/Tileset/spr_tileset_sunnysideworld_16px.png" id="1_d3ih8"]
-[ext_resource type="Texture2D" uid="uid://ou13r42fcx0t" path="res://Assets/Sunnyside_World_Assets/Tileset/spr_tileset_sunnysideworld_forest_32px.png" id="2_lp158"]
+[ext_resource type="Texture2D" uid="uid://cyl8y18kwv225" path="res://Assets/Sprites/Sunnyside_World_Assets/Tileset/spr_tileset_sunnysideworld_16px.png" id="1_iwbay"]
+[ext_resource type="Texture2D" uid="uid://ou13r42fcx0t" path="res://Assets/Sprites/Sunnyside_World_Assets/Tileset/spr_tileset_sunnysideworld_forest_32px.png" id="2_iqk4i"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_02us2"]
-texture = ExtResource("1_d3ih8")
+texture = ExtResource("1_iwbay")
 12:0/0 = 0
 13:0/0 = 0
 14:0/0 = 0
@@ -1747,7 +1747,7 @@ texture = ExtResource("1_d3ih8")
 43:49/0 = 0
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_c8lgd"]
-texture = ExtResource("2_lp158")
+texture = ExtResource("2_iqk4i")
 2:2/0 = 0
 2:2/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
 3:2/0 = 0
