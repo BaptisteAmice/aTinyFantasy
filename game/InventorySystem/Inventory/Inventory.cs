@@ -11,26 +11,26 @@ namespace aTinyFantasy.InventorySystem.Inventory {
         public override void _Ready()
         {
             itemGrid = GetNode<GridContainer>("MarginContainer/ItemGrid");  
-
-            //var invData = ResourceLoader.Load("res://InventorySystem/Inventory/TestInventory.tres") as InventoryData;
-            //PopulateItemGrid(invData.Slots);
         }
 
         public void SetInventoryData(InventoryData inventoryData) {
-            PopulateItemGrid(inventoryData.Slots);
+            PopulateItemGrid(inventoryData);
         }
 
-        public void PopulateItemGrid(SlotData[] slotDatas)
+        public void PopulateItemGrid(InventoryData inventoryData)
         {
             foreach (Node child in itemGrid.GetChildren())
             {
                 child.QueueFree();
             }
 
-            foreach (SlotData slotData in slotDatas)
+            foreach (SlotData slotData in inventoryData.Slots)
             {
-                var slotInstance = slot.Instantiate();
+                Slot slotInstance = (Slot)slot.Instantiate();
                 itemGrid.AddChild(slotInstance);
+
+                //subscribe
+                slotInstance.SlotClicked += inventoryData.OnSlotClicked;
 
                 if (slotData != null)
                 {

@@ -15,7 +15,8 @@ namespace aTinyFantasy.Player
         [Export]
         public InventoryData InventoryData;
 
-        public Action ToggleInventoryEvent;
+        [Signal]
+        public delegate void ToggleInventoryEventHandler();
         
 
         public override void _Ready()
@@ -27,7 +28,7 @@ namespace aTinyFantasy.Player
         {
             if (Input.IsActionJustPressed("inventory"))
             {
-                ToggleInventoryEvent?.Invoke();
+                EmitSignal(SignalName.ToggleInventory);
             } 
 
             Vector2 inputDirection = Input.GetVector("left", "right", "up", "down");

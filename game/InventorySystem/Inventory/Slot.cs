@@ -9,6 +9,9 @@ namespace aTinyFantasy.InventorySystem.Inventory {
         TextureRect icon; 
         Label quantityLabel;
 
+        [Signal]
+        public delegate void SlotClickedEventHandler(int index, MouseButton button);
+
         public override void _Ready()
         {
             icon = GetNode<TextureRect>("MarginContainer/TextureRect");
@@ -31,6 +34,17 @@ namespace aTinyFantasy.InventorySystem.Inventory {
         public static implicit operator Slot(PackedScene v)
         {
             throw new NotImplementedException();
+        }
+
+        public void _on_gui_input(InputEvent @event)
+        {
+            if (@event is InputEventMouseButton mouseButton && mouseButton.Pressed)
+            {
+                if (mouseButton.ButtonIndex == MouseButton.Left || mouseButton.ButtonIndex == MouseButton.Right)
+                {
+                    EmitSignal(SignalName.SlotClicked, GetIndex(), (int)mouseButton.ButtonIndex);
+                }
+            }
         }
     }
 }

@@ -13,7 +13,7 @@ public partial class Main : Node2D
         player = GetNode<Player>("Player");
 
         //subscribe to the player's inventory data change event
-        player.ToggleInventoryEvent += ToggleInventory;
+        player.ToggleInventory += ToggleInventory;
 
         inventoryInterface = GetNode<InventoryInterface>("UI/InventoryInterface");
 
@@ -23,6 +23,13 @@ public partial class Main : Node2D
     public void ToggleInventory()
     {
         inventoryInterface.Visible = !inventoryInterface.Visible;
+        /*if (inventoryInterface.Visible)
+        {
+            Input.SetMouseMode(Input.MouseModeEnum.Visible);
+        } else
+        {
+            Input.SetMouseMode(Input.MouseModeEnum.Captured);
+        }*/
     }
 
     private void InitializeInventory()
