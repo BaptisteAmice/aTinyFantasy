@@ -14,6 +14,7 @@ namespace aTinyFantasy.InventorySystem.Inventory {
         }
 
         public void SetInventoryData(InventoryData inventoryData) {
+            inventoryData.InventoryUpdated += PopulateItemGrid;
             PopulateItemGrid(inventoryData);
         }
 

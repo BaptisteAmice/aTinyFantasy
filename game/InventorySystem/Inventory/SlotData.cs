@@ -25,5 +25,31 @@ namespace aTinyFantasy.InventorySystem.Inventory {
                 _quantity = 1;
             }
         }
+
+        public bool CanFullyMergeWith(SlotData otherSlotData)
+        {
+            return Item == otherSlotData.Item && Item.IsStackable && Quantity + otherSlotData.Quantity <= MAX_STACK_SIZE;
+        }
+
+        public bool CanMergeWith(SlotData otherSlotData)
+        {
+            return Item == otherSlotData.Item && Item.IsStackable && Quantity < MAX_STACK_SIZE;
+        }
+
+        public void FullyMergeWith(SlotData otherSlotData)
+        {
+            if (CanFullyMergeWith(otherSlotData))
+            {
+                Quantity += otherSlotData.Quantity;
+            }
+        }
+
+        public SlotData CreateSingleSlotData()
+        {
+            SlotData newSlotData = Duplicate() as SlotData;
+            newSlotData.Quantity = 1;
+            Quantity -= 1;
+            return newSlotData;
+        }
     }
 }

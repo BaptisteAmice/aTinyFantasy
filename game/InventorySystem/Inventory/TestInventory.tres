@@ -1,4 +1,4 @@
-[gd_resource type="Resource" script_class="InventoryData" load_steps=7 format=3 uid="uid://bfr1ykimhdvry"]
+[gd_resource type="Resource" script_class="InventoryData" load_steps=8 format=3 uid="uid://bfr1ykimhdvry"]
 
 [ext_resource type="Resource" uid="uid://b1krwljjayhg2" path="res://InventorySystem/Item/Items/Carrot.tres" id="1_qa3a3"]
 [ext_resource type="Script" path="res://InventorySystem/Inventory/SlotData.cs" id="2_yn0sc"]
@@ -15,6 +15,11 @@ script = ExtResource("2_yn0sc")
 Item = ExtResource("3_h11ul")
 Quantity = 1
 
+[sub_resource type="Resource" id="Resource_06ll2"]
+script = ExtResource("2_yn0sc")
+Item = ExtResource("1_qa3a3")
+Quantity = 97
+
 [resource]
 script = ExtResource("4_8vhku")
-Slots = Array[Object]([SubResource("Resource_jx4yp"), null, SubResource("Resource_w5una"), null, null, null, null, null, null, null, null, null, null, null, null, null, null])
+Slots = Array[Object]([SubResource("Resource_jx4yp"), null, SubResource("Resource_w5una"), null, null, SubResource("Resource_06ll2"), null, null, null, null, null, null, null, null, null, null, null])

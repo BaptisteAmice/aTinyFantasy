@@ -28,6 +28,8 @@ namespace aTinyFantasy.InventorySystem.Inventory {
             {
                 quantityLabel.Text = "x" + slotData.Quantity;
                 quantityLabel.Show();
+            } else {
+                quantityLabel.Hide();
             }
         }
 
