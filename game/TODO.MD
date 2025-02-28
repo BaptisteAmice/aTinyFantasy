@@ -3,3 +3,5 @@
 - ennemies
 
 - plants culture
+
+inventaire: 39:39
