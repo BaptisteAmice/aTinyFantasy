@@ -1,7 +1,7 @@
 [gd_resource type="Resource" script_class="ItemData" load_steps=3 format=3 uid="uid://cbtl126um327t"]
 
 [ext_resource type="Texture2D" uid="uid://bl1bxm2wx75an" path="res://Assets/Sprites/Sunnyside_World_Assets/Elements/Crops/wood.png" id="1_md2t8"]
-[ext_resource type="Script" path="res://InventorySystem/Item/ItemData.cs" id="1_moldo"]
+[ext_resource type="Script" uid="uid://bkknsc3nomwy3" path="res://InventorySystem/Item/ItemData.cs" id="1_moldo"]
 
 [resource]
 script = ExtResource("1_moldo")

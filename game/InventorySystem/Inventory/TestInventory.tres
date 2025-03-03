@@ -1,9 +1,9 @@
 [gd_resource type="Resource" script_class="InventoryData" load_steps=8 format=3 uid="uid://bfr1ykimhdvry"]
 
 [ext_resource type="Resource" uid="uid://b1krwljjayhg2" path="res://InventorySystem/Item/Items/Carrot.tres" id="1_qa3a3"]
-[ext_resource type="Script" path="res://InventorySystem/Inventory/SlotData.cs" id="2_yn0sc"]
+[ext_resource type="Script" uid="uid://trts0mssf0rm" path="res://InventorySystem/Inventory/SlotData.cs" id="2_yn0sc"]
 [ext_resource type="Resource" uid="uid://cbtl126um327t" path="res://InventorySystem/Item/Items/Wood.tres" id="3_h11ul"]
-[ext_resource type="Script" path="res://InventorySystem/Inventory/InventoryData.cs" id="4_8vhku"]
+[ext_resource type="Script" uid="uid://cbqgpne3w2nkm" path="res://InventorySystem/Inventory/InventoryData.cs" id="4_8vhku"]
 
 [sub_resource type="Resource" id="Resource_jx4yp"]
 script = ExtResource("2_yn0sc")

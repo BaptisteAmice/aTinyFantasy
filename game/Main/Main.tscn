@@ -1,11 +1,11 @@
 [gd_scene load_steps=8 format=4 uid="uid://d3efrf72vedsi"]
 
-[ext_resource type="Script" path="res://Main/Main.cs" id="1_52a1u"]
+[ext_resource type="Script" uid="uid://dtkaaurdm41b4" path="res://Main/Main.cs" id="1_52a1u"]
 [ext_resource type="TileSet" uid="uid://ckhayhdtnccg5" path="res://Assets/tileset.tres" id="1_dnq7b"]
 [ext_resource type="PackedScene" uid="uid://2c3bhxvhckhq" path="res://Player/Player.tscn" id="2_fecgf"]
 [ext_resource type="Resource" uid="uid://bfr1ykimhdvry" path="res://InventorySystem/Inventory/TestInventory.tres" id="3_6o63l"]
 [ext_resource type="PackedScene" uid="uid://cx5qaql6i4ejk" path="res://InventorySystem/Inventory/Inventory.tscn" id="4_84ic4"]
-[ext_resource type="Script" path="res://InventorySystem/Inventory/InventoryInterface.cs" id="5_edqak"]
+[ext_resource type="Script" uid="uid://c2mepnahb2f8d" path="res://InventorySystem/Inventory/InventoryInterface.cs" id="5_edqak"]
 [ext_resource type="PackedScene" uid="uid://bxvpovg6kd0lt" path="res://InventorySystem/Inventory/Slot.tscn" id="7_mcak1"]
 
 [node name="Main" type="Node2D"]
